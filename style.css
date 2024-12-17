@@ -4,16 +4,16 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.more  {
+.more {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.more  img {
+.more img {
   width: 100%;
 }
-.more  .more_inf {
+.more .more_inf {
   font-family: fantasy, cursive;
 }
 
@@ -39,7 +39,7 @@ ul {
   margin: 0;
   padding: 0px;
 }
-li, h3 {
+li, h2 {
   list-style: none;
 }
 input,
@@ -59,8 +59,7 @@ button:hover {
   color: #3a3A3a;
 }
 /* Heading */
-h3,
-label[for='new-task'] {
+h2 {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -84,14 +83,20 @@ input[type="text"] {
 input[type="text"]:focus {
   color: #333;
 }
+.heading {
+  display: none;
+}
 
 /* New Task */
-label[for='new-task'] {
+.new label {
+  width: 100%;
+}
+.new-task {
   display: block;
   margin: 0 0 20px;
 }
 #new-task {
-  width: 318px;
+  width: 95%;
 }
 
 /* Task list */
@@ -137,14 +142,14 @@ li > input[type="text"] {
 
 /* Edit Task */
 ul li input[type=text] {
-  display:none;
+  display: none;
 }
 
 .edit-mode input[type=text] {
-  display:inline-block;
-  width:224px;
+  display: inline-block;
+  width: 224px;
 }
 
 .edit-mode label {
-  display:none;
+  display: none;
 }
